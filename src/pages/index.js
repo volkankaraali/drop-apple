@@ -1,7 +1,6 @@
 // libraries
 import React from 'react';
 import Head from 'next/head';
-import { useSelector } from 'react-redux';
 
 // components
 import Tree from '@/components/Tree';
@@ -11,13 +10,6 @@ import Basket from '@/components/Basket';
 import styles from "../styles/Home.module.scss";
 
 export default function Home() {
-
-
-  const { branches, basket } = useSelector(state => state.tree)
-  console.log(branches.length)
-  console.log(basket)
-
-
 
   return (
     <>
