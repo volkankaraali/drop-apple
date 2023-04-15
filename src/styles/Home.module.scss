@@ -1,0 +1,42 @@
+.header{
+  display: flex;
+  justify-content: center;
+  a{
+    color: white;
+  }
+}
+
+.mainContainer{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// media queries
+
+@media screen and (min-width: 426px) and (max-width:768px) {
+  .mainContainer{
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width:425px) {
+  .mainContainer{
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 3rem;
+  }
+}

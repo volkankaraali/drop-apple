@@ -1,0 +1,229 @@
+.container{
+  position: relative;
+
+  .treeContainer{
+    width: 800px;
+    height: 800px;
+    z-index: 1;
+    position: relative;
+  }
+  svg{
+    width: 100%;
+    height: 100%;
+  }
+  .shake{
+    animation: shakeAnimation 1s ease-in-out infinite;
+  }
+
+  .shakeButton{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    opacity: 0.8;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    bottom: 140px;
+    left: 340px;
+  }
+
+  .newTreeButton{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    opacity: 0.8;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    bottom: 140px;
+    left: 335px;
+  }
+
+  .shakeButton:disabled{
+    cursor: auto;
+  }
+
+  .ground{
+    z-index: -1;
+    width: 590px;
+    height: 200px;
+    position: absolute;
+    bottom: 20px;
+    left: 95px;
+  }
+
+  .droppedApple{
+    display: flex;
+    justify-content: space-between;
+    gap:3rem;
+    flex-wrap: wrap;
+    animation: dropApple 1s ease-in-out;
+  }
+
+  .branch{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height:65px;
+  }
+
+  .branch1{
+    top:30px;
+    left: 370px;
+  }
+
+  .branch2{
+    top: 90px;
+    left: 230px;
+  }
+  .branch3{
+    top: 100px;
+    left: 430px;
+  }
+  .branch4{
+    top:160px;
+    left: 140px;
+  }
+  .branch5{
+    top:180px;
+    left: 320px;
+  }
+  .branch6{
+    top:180px;
+    left: 520px;
+  }
+  .branch7{
+    top:250px;
+    left: 200px;
+  }
+  .branch8{
+    top:260px;
+    left: 410px;
+  }
+  .branch9{
+    top:350px;
+    left: 190px;
+  }
+  .branch10{
+    top:340px;
+    left: 480px;
+  }
+  .branch11{
+    top:440px;
+    left: 300px;
+  }
+
+}
+
+
+// media queries
+
+@media screen and (min-width: 320px) and (max-width:425px) {
+  .container{
+    .treeContainer{
+      width: 320px;
+      height: 320px;
+    }
+
+    .shakeButton{
+      bottom: 16px;
+      left: 115px;
+    }
+  
+    .newTreeButton{
+      bottom: 16px;
+      left: 105px;
+    }
+
+    .ground{
+      width: 250px;
+      height: 100px;
+      bottom: 0px;
+      left: 30px;
+    }
+
+    .droppedApple{
+      gap:1.5rem;
+      
+    }
+
+    .branch{
+      width: 60px;
+      height: 30px;
+    }
+
+    .branch1{
+      top:20px;
+      left: 50px;
+    }
+    .branch2{
+      top:10px;
+      left:130px;
+    }
+    .branch3{
+      top:55px;
+      left:100px;
+    }
+    .branch4{
+      top:40px;
+      left:180px;
+    }
+    .branch5{
+      top:70px;
+      left:200px;
+    }
+    .branch6{
+      top:100px;
+      left:140px;
+    }
+    .branch7{
+      top:90px;
+      left:50px;
+    }
+    .branch8{
+      top:120px;
+      left:80px;
+    }
+    .branch9{
+      top:120px;
+      left:200px;
+    }
+
+    .branch10{
+      top:160px;
+      left:170px;
+    }
+    .branch11{
+      top:160px;
+      left:70px;
+    }
+  }
+  
+}
+
+
+
+
+
+// keyframes
+@keyframes shakeAnimation {
+  0%, 100% {
+    transform:  rotate(0deg);
+  }
+  25% {
+    transform:  rotate(-5deg);
+  }
+  75% {
+    transform:  rotate(5deg);
+  }
+}
+
+@keyframes dropApple {
+  0%{
+    transform: translateY(-200px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
