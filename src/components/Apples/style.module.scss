@@ -8,21 +8,14 @@
     height: 100%;
   }
 
-  .appleOnTree{
-    animation: opacity 1s ease-in-out;
-  }
-  
-  
-  .appleOnGround{
-    display: flex;
-    justify-content: space-between;
-    gap:3rem;
-    flex-wrap: wrap;
-    animation: dropApple 0.8s ease-in-out;
-  }
 }
 
-
+.appleOnTree{
+  animation: opacity 1s ease-in-out;
+}
+.appleOnGround{
+  animation: dropApple 0.8s ease-in-out;
+}
 
 // media queries
 @media screen and (min-width: 320px) and (max-width:425px){

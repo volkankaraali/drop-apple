@@ -44,21 +44,19 @@
   }
 
   .ground{
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+    flex-wrap: wrap;
     z-index: -1;
     width: 590px;
     height: 200px;
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     left: 95px;
   }
 
-  .droppedApple{
-    display: flex;
-    justify-content: space-between;
-    gap:3rem;
-    flex-wrap: wrap;
-    animation: dropApple 1s ease-in-out;
-  }
+  
 
   .branch{
     position: absolute;
@@ -216,14 +214,5 @@
   }
   75% {
     transform:  rotate(5deg);
-  }
-}
-
-@keyframes dropApple {
-  0%{
-    transform: translateY(-200px);
-  }
-  100%{
-    transform: translateY(0px);
   }
 }

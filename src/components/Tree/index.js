@@ -74,13 +74,11 @@ export default function Tree() {
             {
               displayGround && (
                 <div className={styles.ground}>
-                  <div className={styles.droppedApple}>
-                    {
-                      Array.from({ length: droppedApple }).map((_, index) => (
-                        <Apples key={index} position="ground" />
-                      ))
-                    }
-                  </div>
+                  {
+                    Array.from({ length: droppedApple }).map((_, index) => (
+                      <Apples key={index} position="ground" />
+                    ))
+                  }
                 </div>
               )
             }
