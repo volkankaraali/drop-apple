@@ -27,7 +27,6 @@ export default function Home() {
       <div className={styles.mainContainer}>
         <Tree />
         <Basket />
-
       </div>
 
 

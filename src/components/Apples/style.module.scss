@@ -1,8 +1,5 @@
 .container{
 
-  width: 64px;
-  height: 64px;
-
   svg{
     width: 100%;
     height: 100%;
@@ -13,12 +10,17 @@
 .appleOnBasket{
   width: 30px;
   height: 30px;
+  animation: opacity 1s ease-in-out;
 }
 
 .appleOnTree{
+  width: 64px;
+  height: 64px;
   animation: opacity 1s ease-in-out;
 }
 .appleOnGround{
+  width: 64px;
+  height: 64px;
   animation: dropApple 0.8s ease-in-out;
 }
 
@@ -30,7 +32,6 @@
   }
   
 }
-
 
 // keyfreames
 @keyframes opacity {
