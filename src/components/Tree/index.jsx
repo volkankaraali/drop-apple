@@ -30,7 +30,7 @@ export default function Tree() {
     setShake(true);
     setTimeout(() => {
       setShake(false);
-      dispatch(handleDroppedApple(branches));
+      dispatch(handleDroppedApple());
       handleGroundDisplay();
     }, 3000);
   }

@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 
 
 // utils
@@ -16,7 +16,7 @@ export const treeSlice = createSlice({
   initialState,
   reducers: {
     handleDroppedApple: (state, action) => {
-      const { branchesLeftOnTheTree, totalDroppedApple } = getRandomDropApples(action.payload);
+      const { branchesLeftOnTheTree, totalDroppedApple } = getRandomDropApples(current(state.branches));
       state.branches = branchesLeftOnTheTree;
       state.droppedApple = totalDroppedApple;
       state.basket += totalDroppedApple;

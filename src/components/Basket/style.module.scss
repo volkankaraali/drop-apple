@@ -1,22 +1,38 @@
 .basket{
-  display: flex;
-  align-items: center;
+  margin-top: 40rem;
 }
 
 .iconContainer{
   position: relative;
 }
 
+.appleContainer{
+  z-index: -1;
+  position: absolute;
+  width: 50px;
+  display: flex;
+  top: 5px;
+  left: 5px;
+
+}
 .badge{
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 10px;
-  right: 0;
+  top: 18px;
+  right: 5px;
   width: 20px;
   height: 20px;
   border-radius: 100%;
   background-color: green;
   color: white;
+}
+
+// media queries
+
+@media screen and (min-width:320px) and (max-width:768px) {
+  .basket{
+    margin-top: 0;
+  }
 }

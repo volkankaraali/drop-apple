@@ -9,9 +9,7 @@ const getRandomDropApples = (branches) => {
     const isDropped = Math.random() >= 0.5;
 
     if (isDropped) totalDroppedApple += item.apple;
-    else {
-      branchesLeftOnTheTree.push(item)
-    }
+    else branchesLeftOnTheTree.push(item)
   })
 
   return {

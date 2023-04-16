@@ -26,9 +26,8 @@ export default function Home() {
 
       <div className={styles.mainContainer}>
         <Tree />
-        <div className={styles.sidebar}>
-          <Basket />
-        </div>
+        <Basket />
+
       </div>
 
 
