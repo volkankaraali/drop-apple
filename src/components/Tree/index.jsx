@@ -11,6 +11,7 @@ import Apples from "../Apples";
 
 // redux reducers
 import { handleDroppedApple, newTree } from "@/redux/slices/treeSlice";
+import Button from "../Button";
 
 export default function Tree() {
 
@@ -65,10 +66,9 @@ export default function Tree() {
               }
               {
                 branches.length > 0
-                  ? <button className={styles.shakeButton} onClick={handleShake}>shake</button>
-                  : <button className={styles.newTreeButton} onClick={handleNewTree}>new tree</button>
+                  ? <Button text="shake" onClick={handleShake} />
+                  : <Button text="new tree" onClick={handleNewTree} />
               }
-
             </div>
 
             {

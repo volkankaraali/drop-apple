@@ -15,34 +15,6 @@
     animation: shakeAnimation 1s ease-in-out infinite;
   }
 
-  .shakeButton{
-    position: absolute;
-    background-color: transparent;
-    border: none;
-    opacity: 0.8;
-    font-size: 1rem;
-    cursor: pointer;
-    padding: 1rem;
-    bottom: 140px;
-    left: 340px;
-  }
-
-  .newTreeButton{
-    position: absolute;
-    background-color: transparent;
-    border: none;
-    opacity: 0.8;
-    font-size: 1rem;
-    cursor: pointer;
-    padding: 1rem;
-    bottom: 140px;
-    left: 335px;
-  }
-
-  .shakeButton:disabled{
-    cursor: auto;
-  }
-
   .ground{
     display: flex;
     justify-content: space-between;
@@ -122,16 +94,6 @@
     .treeContainer{
       width: 320px;
       height: 320px;
-    }
-
-    .shakeButton{
-      bottom: 16px;
-      left: 115px;
-    }
-  
-    .newTreeButton{
-      bottom: 16px;
-      left: 105px;
     }
 
     .ground{
