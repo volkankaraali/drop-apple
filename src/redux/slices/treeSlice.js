@@ -16,8 +16,8 @@ export const treeSlice = createSlice({
   initialState,
   reducers: {
     handleDroppedApple: (state, action) => {
-      const { branchesLeftOnTheTree, totalDroppedApple } = getRandomDropApples(current(state.branches));
-      state.branches = branchesLeftOnTheTree;
+      const { droppedBranches, totalDroppedApple } = getRandomDropApples(current(state.branches));
+      state.branches = current(state.branches).filter(item => !droppedBranches.includes(item));
       state.droppedApple = totalDroppedApple;
       state.basket += totalDroppedApple;
     },
