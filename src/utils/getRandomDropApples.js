@@ -14,8 +14,6 @@ const getRandomDropApples = (branches) => {
     };
   })
 
-  console.log(droppedBranches)
-
   return {
     droppedBranches,
     totalDroppedApple
